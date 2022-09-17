@@ -1,0 +1,48 @@
+body {
+    background-color: #5E5768;
+}
+
+.content {
+    max-width: 80%;
+    margin: 30px auto;
+    padding: 15px;
+    background-color: white;
+    border-radius: 25px;
+    color: #2F374B;
+}
+
+.APHeader {
+    background-color: #2F374B;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+.APHeader h1 {
+    color: white;
+    margin: auto auto;
+}
+
+.APHeader img {
+    height: 100px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.APFooter {
+    background-color: #2F374B;
+    border-radius: 10px;
+    padding: 0.5em;
+    color: white;
+    text-align: center;
+}
+
+.APFooter p {
+    margin: 0 0;
+}
+
+.diminished {
+    font-style: italic;
+    color: lightgrey;
+    font-size: 7;
+}
