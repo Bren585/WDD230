@@ -1,0 +1,47 @@
+.design-principle {
+    display: grid;
+    grid-template-columns: 165px, auto;
+    grid-template-rows: 1em, 2em, auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding: 10px;
+    border-color: #2F374B;
+    border-width: 2px;
+    border-style: solid;
+    background-color: rgb(243, 243, 243);
+}
+.design-principle * {
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.design-principle h2 {
+    grid-column: 1/3;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+
+.design-principle .company {
+    grid-column: 1;
+    grid-row: 2;
+    font-weight: bold;
+}
+
+.design-principle .link {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.design-principle .screenshot {
+    grid-column: 2;
+    grid-row: 3;
+    width: 140px;
+    height: 304px;
+}
+
+.design-principle .analysis {
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 0.8em;
+    margin-right: 1em;
+}

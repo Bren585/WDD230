@@ -3,12 +3,55 @@
         <meta charset="utf-8">
         <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1">
         <title>WDD Assignment Portal | Lesson 2</title>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="styles/dp-style.css">
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="../styles/universal.css">
+        <link rel="stylesheet" href="styles/design-principles.css">
     </head>
     <body>
+        <header>
+            <h1>Week 2 | Design Principles</h1>
+        </header>
 
+        <div class = "design-principle">
+            <h2>PARC Repitition</h2>
+            <p class="company">Stormbound Games</p>
+            <a href="https://www.stormbound-kitty.com" class="link">Website</a>
+            <img class = "screenshot" src="images/stormbound-kitty.jpeg">
+            <p class="analysis">
+                &emsp; The Stormbound Kitty website uses repitition to divide it's homepage into distinct categories to help users quickly find the tools they're looking for. 
+                <br>
+                &emsp; The repitition of the background, style, and button layout makes it easy to identify the title of the category, the description, and the links to the tools.
+            </p>
+        </div>
+
+        <div class = "design-principle">
+            <h2>PARC Proximity</h2>
+            <p class="company">Mojang</p>
+            <a href="https://www.minecraft.net" class="link">Website</a>
+            <img class = "screenshot" src="images/minecraft.jpeg">
+            <p class="analysis">
+                &emsp; The official Minecraft website uses proximity to group a game's box art with its title and description. 
+                <br>
+                &emsp; In a vacuum, It would be difficult to tell if a title is attached to the preceding element or the following element. However, the clear difference in proximity to the title between the top image and the bottom image makes it clear to the viewer that the title is attached to the top image.
+            </p>
+        </div>
+
+        <div class = "design-principle">
+            <h2>White Space</h2>
+            <p class="company">Drew Goodman</p>
+            <a href="https://www.pictureofhotdog.com" class="link">Website</a>
+            <img class = "screenshot" src="images/pictureofhotdog.jpeg">
+            <p class="analysis">
+                &emsp; To be fair, this website is a parody of websites in general. However, it effectively uses whitespace to draw attention to it's main focus, the titular hot dog.
+                <br>
+                &emsp; There are other elements on the website, not visible in the screenshot. However, the white space makes it clear; those features aren't important. The hot dog is what you came here for.
+            </p>
+        </div>
+
+        <footer>
+            <p>&copy <span id="year"></span> | Brendan J. Koetting | Idaho</p>
+            <p class="diminished">Last Updated : <span id="lastModified"></span></p>
+        </footer>
     </body>
-    <footer>
-    </footer>
+    <script type="text/javascript" src="../scripts/dates.js"></script>
 </html>
