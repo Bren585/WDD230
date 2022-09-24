@@ -1,4 +1,6 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+html {
     background-color: #5E5768;
 }
 
@@ -22,10 +24,12 @@ body {
     color: white;
     margin: auto auto;
     margin-left: 10px;
+    font-family: 'Libre Baskerville', serif;
 }
 
 .APHeader img {
     height: 100px;
+    width: 75px;
     margin-left: auto;
     border-radius: 5px;
     margin-right: 10px;
