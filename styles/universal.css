@@ -43,3 +43,11 @@ footer p {
     color: lightgrey;
     font-size: 7;
 }
+
+h2 .subheader {
+    display: block;
+    font-style: italic;
+    font-weight: normal;
+    font-size: large;
+    margin-left: 1em;
+}
