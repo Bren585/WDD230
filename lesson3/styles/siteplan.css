@@ -15,18 +15,36 @@ p {
     border-radius: 5px;
 }
 
-.sitePlanNav ul {
-    display: flex;
-    margin-left: -30px;
+@media screen and (min-width: 500px) {
+    .sitePlanNav ul {
+        display: flex;
+        padding: 2px;
+    }
+
+    .sitePlanNav ul li {
+        width: 4em;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sitePlanNav ul {
+        display: block;
+        text-align: center;
+    }
 }
 
 .sitePlanNav ul li {
     list-style: none;
+    padding: 5px;
     margin: 5px;
+    border-radius: 2px;
+    background-color: #3f4c6c;
 }
 
 .sitePlanNav ul li a {
     color: white;
+    text-decoration: none;
 }
 
 .sitePlanNav ul li a:visited{
