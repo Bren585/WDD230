@@ -1,0 +1,67 @@
+.example {
+    font-weight: bold;
+}
+
+#background .example {
+    background: #D8F3DC;
+}
+
+#body .example {
+    background: white;
+}
+
+#header .example {
+    background-color: #456990;
+    color: white;
+}
+
+#navigation .example {
+    background-color: #83A2C3;
+    color: #2F4660;
+}
+
+#navigation .example:hover {
+    color: white;
+}
+
+#paragraph .example {
+    color: #2F4660;
+}
+
+#footer .example {
+    background-color: #1B4332;
+    color: white; 
+}
+
+#ex-background {
+    background-color: #D8F3DC;
+    margin-bottom: 1em;
+    padding: 25px;
+}
+
+#ex-body {
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px;
+    height: 500px;
+}
+
+#ex-header {
+    background-color: #456990;
+    margin: 0 auto;
+    height: 50px;
+}
+
+#ex-navigation {
+    background-color: #83A2C3;
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 30px;
+}
+
+#ex-footer {
+    background-color: #1B4332;
+    align-self: bottom;
+    margin-top: 360px;
+    height: 50px;
+}
