@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@500&family=Roboto:wght@400;700&display=swap');
 
+.example {
+    background-color: rgb(200, 200, 200);
+}
+
 #h1 .example {
+    color: white;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -9,6 +14,21 @@
     font-weight: bold;
 }
 
+#nav .example {
+    font-family: 'Lora', sans-serif;
+    color: #2F4660;
+}
+
+#nav .example:hover {
+    color:white;
+}
+
 #p .example {
     font-family: 'Lora', sans-serif;
+    color: #2F4660;
+}
+
+#footer .example {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
 }
