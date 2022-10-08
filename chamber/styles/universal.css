@@ -1,0 +1,325 @@
+/* General **********************/
+body {
+    background-color: #1B4332;
+}
+
+main {
+    background-color: white;
+}
+
+p, nav ul li a {
+    font-family: 'Lora', sans-serif;
+    text-decoration: none;
+}
+
+nav {
+    grid-column: 1/6;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #73a18e;
+}
+
+nav ul li a:hover {
+    color: #4a876e;
+}
+
+/* Header **********************/
+header {
+    margin: 10px;
+    margin-bottom: -5px;
+}
+
+header .socialLogo {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+
+header .hamburger {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+header .logo {
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 25px;
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #b0e4cf;
+}
+
+h1 .subheader {
+    display: block;
+    font-style: italic;
+    font-weight: normal;
+    font-size: large;
+}
+
+#navButton {
+    border: none;
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    background-color: rgba(1,1,1,0);
+}
+
+#todaysDate {
+    grid-column: 1/7;
+    grid-row: 2/3;
+    width: 100%;
+    margin-top: 5px;
+    height: 2em;
+    background-color: #4a876e;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #a9c7ae;
+    color: #1B4332;
+    text-align: center;
+    line-height: 200%; /*Dunno why but it centers*/
+}
+
+/* Footer **********************/
+footer {
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+footer p, img, a {
+    color: #b0e4cf;
+}
+
+footer h1 {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.address {
+    margin-top: 1px;
+    font-style: italic;
+}
+
+.pin {
+    width: 15px;
+    height: 15px;
+}
+
+footer a:hover {
+    color: #73a18e;
+    text-decoration: underline;
+}
+
+footer hr {
+    border-color: #b0e4cf;
+}
+
+.footerer p {
+    margin: 1px;
+    font-size: 12px;
+}
+
+.author {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        display: grid;
+        grid-template-columns: 50px 1fr 30px 30px 50px;
+        grid-gap: 10px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav ul li {
+        margin: 20px auto;
+        background-color: #4a876e;
+        width: 200px;
+        padding: 5px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: #a9c7ae;
+    }
+
+    nav ul li a {
+        color: #1B4332;
+    }
+
+    nav ul li a:hover {
+        color: #2c6f53;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer .logo {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+
+    .l {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+    header {
+        display: grid;
+        grid-template-columns: 50px 1fr 30px 30px 100px 50px;
+        grid-gap: 10px;
+    }
+
+    #navButton {
+        grid-column: 6/7;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav ul li {
+        margin: 20px auto;
+        background-color: #4a876e;
+        width: 200px;
+        padding: 5px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: #a9c7ae;
+    }
+
+    nav ul li a {
+        color: #1B4332;
+    }
+
+    nav ul li a:hover {
+        color: #2c6f53;
+    }
+
+    footer .logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .foot {
+        display: flex;
+    }
+
+    .foot p {
+        margin: 1px;
+    }
+
+    .foot .left {
+        margin-top: 40px;
+    }
+
+    .foot .right {
+        margin-top: 40px;
+        text-align: center;
+        margin-right: 50px;
+        margin-left: auto;
+    }
+
+    .pin {
+        margin-top: 5px;
+    }
+
+    .footerer {
+        text-align: center;
+    }
+
+    .footerer br {
+        display: none;
+    }
+
+    .footerer .meanie {
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    header {
+        display: grid;
+        grid-template-columns: 50px 1fr 1fr 30px 30px;
+        grid-gap: 10px;
+    }
+
+    #todaysDate {
+        margin-top: -16px;
+    }
+
+    #navButton {
+        display: none;
+    }
+
+    nav {
+        grid-row: 1/2;
+        grid-column: 3/4;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px;
+    }
+
+    nav ul .social {
+        display: none;
+    }
+
+    footer .logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .foot {
+        display: flex;
+    }
+
+    .foot p {
+        margin: 1px;
+    }
+
+    .foot .left {
+        margin-top: 40px;
+    }
+
+    .foot .right {
+        margin-top: 40px;
+        text-align: center;
+        margin-right: 50px;
+        margin-left: auto;
+    }
+
+    .pin {
+        margin-top: 5px;
+    }
+
+    .footerer {
+        text-align: center;
+    }
+
+    .footerer br {
+        display: none;
+    }
+}
