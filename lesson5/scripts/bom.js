@@ -4,6 +4,8 @@ const lst = document.querySelector('ul');
 
 btn.onclick = function () {
     var input = inp.value;
+    if (input == "") return;
+
     inp.value = '';
 
     const element = document.createElement('li');
