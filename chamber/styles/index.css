@@ -18,6 +18,15 @@ main h3 {
 }
 
 /* Hero ********************************************/
+#announcement {
+    margin-top: 0;
+    padding: 5px;
+    background-color: #87c0fd;
+    text-align: center;
+    display: none;
+}
+
+/* Hero ********************************************/
 .hero {
     position: relative;
     overflow: hidden;
