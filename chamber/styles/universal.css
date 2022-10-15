@@ -1,10 +1,14 @@
-/* General **********************/
+/* General ********************************************/
 body {
     background-color: #1B4332;
 }
 
 main {
     background-color: white;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
 }
 
 p, nav ul li a {
@@ -30,7 +34,24 @@ nav ul li a:hover {
     color: #4a876e;
 }
 
-/* Header **********************/
+a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    background-color: #54779d;
+    border-radius: 15px;
+    padding: 12px 22px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #6d90b5;
+    box-shadow: inset 0 0 10px #54779d;
+    text-decoration: none;
+}
+
+/* Header ********************************************/
 header {
     margin: 10px;
     margin-bottom: -5px;
@@ -97,19 +118,22 @@ h1 .subheader {
     line-height: 200%; /*Dunno why but it centers*/
 }
 
-/* Footer **********************/
+/* Footer ********************************************/
 footer {
     margin: 5px;
     margin-bottom: 10px;
 }
 
-footer p, img, a {
+footer p, footer img, footer a {
     color: #b0e4cf;
 }
 
-footer h1 {
+footer h3 {
+    color: #b0e4cf;
     font-size: 20px;
     font-style: italic;
+    font-size: 25px;
+    margin: 0;
 }
 
 .address {
@@ -167,7 +191,7 @@ footer hr {
     }
 
     nav ul li a:hover {
-        color: #2c6f53;
+        color: #007243;
     }
 
     footer {
@@ -189,6 +213,7 @@ footer hr {
     }
 }
 
+/* Queries ********************************************/
 @media screen and (min-width: 801px) and (max-width: 1200px) {
     header {
         display: grid;
@@ -219,7 +244,7 @@ footer hr {
     }
 
     nav ul li a:hover {
-        color: #2c6f53;
+        color: #007243;
     }
 
     footer .logo {
