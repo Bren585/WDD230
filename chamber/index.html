@@ -34,7 +34,11 @@
         <main>
             <div class="homegrid">
                 <section class="hero">
-                    <img src="https://placehold.jp/1000x500.png" alt="The Foothills">
+                    <picture>
+                        <source media="(min-width:1201px)" srcset="images/hero-large.jpg">
+                        <source media="(min-width:801px)" srcset="images/hero-medium.jpg">
+                        <img src="images/hero-small.jpg" alt="The Foothills">
+                    </picture>
                     <h2>Welcome to the Foothills!</h2>
                     <a class="button">Join the Chamber</a>
                 </section>
@@ -45,14 +49,14 @@
                 </section>
                 <section class="weather">
                     <h3>Weather</h3>
-                    <p class="temp"><img src="https://placehold.jp/100x100.png" alt="Weather">147&#8457;</p>
+                    <p class="temp"><img src="images/weather.png" alt="Weather"><span id="temp">147</span>&#8457;</p>
                     <p class="sky">Partly Cloudy</p>
                     <hr>
                     <div>
-                        <p class="title">Wind Speed:</p>
-                        <p class="value">41.2 km/h</p>
-                        <p class="title">Wind Chill:</p>
-                        <p class="value">N/A</p>
+                        <p>Wind Speed:</p>
+                        <p><span id="wind">41.2</span> km/h</p>
+                        <p>Wind Chill:</p>
+                        <p><span id="chill">N/A</span>&#8457;</p>
                     </div>
                 </section>
                 <section class="news">
@@ -62,7 +66,7 @@
                 <div class="spotlights">
                     <section class="spotlight">
                         <h3>Foothill Foot Care</h3>
-                        <img src="https://placehold.jp/100x100.png" alt="Foothill Foot Care Logo">
+                        <img src="images/foot.png" alt="Foothill Foot Care Logo">
                         <h4>"Feet? We got 'em!"</h4>
                         <hr>
                         <p>info@foothillfeet.org</p>
@@ -70,7 +74,7 @@
                     </section>
                     <section class="spotlight">
                         <h3>Shoepolis</h3>
-                        <img src="https://placehold.jp/100x100.png" alt="Shoepolis Logo">
+                        <img src="images/shoes.png" alt="Shoepolis Logo">
                         <h4>An innovative take on covering the foot.</h4>
                         <hr>
                         <p>contact@shoepolis.org</p>
@@ -78,7 +82,7 @@
                     </section>
                     <section class="spotlight">
                         <h3>Manny's Pettys</h3>
-                        <img src="https://placehold.jp/100x100.png" alt="Manny's Pettys Logo">
+                        <img src="images/pedicure.png" alt="Manny's Pettys Logo">
                         <h4>"I ain't petty, I'm pretty!"</h4>
                         <hr>
                         <p>contact@shoepolis.org</p>
@@ -111,5 +115,6 @@
         </footer>
         <script src="scripts/dates.js"></script>
         <script src="scripts/navButton.js"></script>
+        <script src="scripts/windchill.js"></script>
     </body>
 </html>
