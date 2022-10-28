@@ -14,5 +14,5 @@ window.addEventListener("resize", function(event) {
         nav.style.display = "flex";
     } else {
         nav.style.display = "none";
-    } 
+    }
 })
