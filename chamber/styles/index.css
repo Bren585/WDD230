@@ -1,5 +1,5 @@
 :root {
-    --main-text-color: #051c34;
+    --main-text-color: #072443;
 }
 
 main {
@@ -17,8 +17,8 @@ main {
 main h3 {
     margin: 0;
     font-size: 28px;
-    color: white;
-    text-shadow: 0px 0px 3px black;
+    color: var(--main-text-color);
+    text-shadow: 0px 0px 3px rgb(255, 255, 255);
 }
 
 /* Announcement ********************************************/
