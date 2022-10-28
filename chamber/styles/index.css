@@ -6,7 +6,7 @@ main {
     padding: 1em;
 }
 
-.spotlights {
+.spotlights, .join {
     text-align: center;
     background-color: #83A2C3;
     border-style: solid;
