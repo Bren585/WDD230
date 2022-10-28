@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang = en>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Foothill Chamber of Commerce Discover Page">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Foothill Chamber | Discover</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/universal.css">
+    </head>
+    <body>
+        <div id="announcement">
+            <p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+        </div>
+        <header>
+            <a href="index.html"><img class="logo" alt="Foothill Chamber Logo" src="images/logo-circle.webp"></a>
+            <h1>Foothill<span class="subheader">Chamber of Commerce</span></h1>
+            <a href="https://www.facebook.com"><img class="socialLogo" alt="Facebook" src="images/facebook.png"></a>
+            <a href="https://www.linkedin.com"><img class="socialLogo" alt="Linkedin" src="images/linkedIn.png"></a>
+            <button id="navButton" type="button"><img class="hamburger" alt="Navigation" src="images/hamburger.png"></button>
+            <nav id="nav">
+                <ul>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="index.html">Directory</a></li>
+                    <li><a href="index.html">Join</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                    <li class="social"><a href="https://www.facebook.com">Facebook</a></li>
+                    <li class="social"><a href="https://www.linkedin.com">Linkedin</a></li>
+                </ul>
+            </nav>
+            <p id="todaysDate"></p>
+        </header>
+        <main>
+            <section class="message">
+                <p>Welcome Back! Days since last visit: <span id="days-since">0</span></p>
+            </section>
+            <section>
+                <h2>Discover the Foothills</h2>
+                <div class="gallery">
+                    <section class="card">
+                        <h4>The Hills</h4>
+                        <img src="images/hills.jpg" alt="The Foothills" loading="lazy">
+                        <p>These are the beautiful hills that outline the backdrop of our lovely town.</p>
+                    </section>
+                    <section class="card">
+                        <h4>The Trails</h4>
+                        <img src="images/hill-hiker.jpg" alt="A hiker on the hilltops" loading="lazy">
+                        <p>There's plenty of beautiful hiking trails through our picturesque hills.</p>
+                    </section>
+                    <section class="card">
+                        <h4>The Suburbs</h4>
+                        <img src="images/hill-town.jpg" alt="Cozy homes amidst the hills" loading="lazy">
+                        <p>The Foothills are home to many a family home.</p>
+                    </section>
+                    <section class="card">
+                        <h4>The Feet</h4>
+                        <img src="images/feet-street.jpg" alt="The feet of a busy street" loading="lazy">
+                        <p>We put the "foot" in Foothills!</p>
+                    </section>
+                    <section class="card">
+                        <h4>The Foot</h4>
+                        <img src="images/foot-statue.jpg" alt="A statue of feet" loading="lazy">
+                        <p>These are the town's iconic "statue de pieds" in the city sqaure.</p>
+                    </section>
+                </div>
+            </section>
+            <section>
+                <h3>Foothill Demographics</h3>
+                <p>Population: 3 (66% urban, 33% rural)</p>
+                <p>Median Age: 14.5 years</p>
+                <p>Median Income: $311,604</p>
+                <p>Median House Value: $81,578</p>
+            </section>
+        </main>
+        <footer>
+            <div class="foot">
+                <img class="logo" alt="Foothill Chamber Logo" src="images/logo-circle.webp">
+                <div class="left">
+                    <h3>Foothill Chamber of Commerce</h3>
+                    <p class="address">123 Chamber lane<br>Foot, Hill 58885</p>
+                </div>
+                <div class="right">
+                    <p class="email">info@foothillchamber.org</p>
+                    <p class="phone">(000) 1010-0101</p>
+                    <a class="map"><img class="pin" alt="Map Pin" src="images/pin.png">Location Map</a>
+                </div>
+            </div>
+            <hr> 
+            <div class="footerer">
+                <p class="copyright">&copy;<span id="year"></span> Foothill Chamber<span class="l"> | </span><br><b>Brendan Koetting</b><span class="l"> | </span><br>WDD 230 Project<span class="l"> | </span><br class="meanie">Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </footer>
+        <script src="scripts/dates.js"></script>
+        <script src="scripts/navbutton.js"></script>
+        <script src="scripts/days-since-last.js"></script>
+    </body>
+</html>
