@@ -14,6 +14,10 @@ main {
     border-color: #627e9d;
 }
 
+.news, .event, .weather {
+    margin: 0;
+}
+
 /* Hero ********************************************/
 .hero {
     position: relative;
