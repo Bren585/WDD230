@@ -1,0 +1,25 @@
+div {
+    position: relative;
+    margin: 10px auto;
+    width: 300px;
+    height: 400px;
+}
+
+div img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 400px;
+}
+
+.top {
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.loaded .top {
+    opacity: 0;
+}
