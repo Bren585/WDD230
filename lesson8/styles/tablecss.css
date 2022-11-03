@@ -1,0 +1,30 @@
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    position: relative;
+    caption-side: bottom;
+}
+
+caption {
+    margin-top: 4px;
+}
+
+td, th {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 4px; 
+    text-align: center;
+}
+
+th, .focus {
+    background-color: #FFCAD4;
+}
+
+tr:first-child th {
+    background-color: #F4ACB7;
+}
+
+tr:nth-child(even) {
+    background-color: #EEEEEE;
+}
