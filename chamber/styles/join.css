@@ -1,0 +1,12 @@
+@media screen and (min-width: 801px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 450px;
+    }
+
+    h2 {
+        grid-column: 1/3;
+    }
+
+}

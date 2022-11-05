@@ -22,6 +22,7 @@ h1, h2, h3 {
 }
 
 main h2 {
+    text-align: center;
     margin: 0;
     font-size: 28px;
     color: var(--main-text-color);
@@ -154,6 +155,13 @@ h1 .subheader {
     font-size: large;
 }
 
+h2 .subheader {
+    display: block;
+    font-style: italic;
+    font-weight: normal;
+    font-size: large;
+}
+
 #navButton {
     border: none;
     padding: 0;
@@ -176,6 +184,30 @@ h1 .subheader {
     color: #03100a;
     text-align: center;
     line-height: 200%; /*Dunno why but it centers*/
+}
+
+/* Form ********************************************/
+
+form {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 20px 1fr 4fr 20px;
+}
+
+label {
+    text-align: right;
+    grid-column: 2/3;
+}
+
+input, select, textarea {
+    grid-column: 3/4;
+    resize: none;
+}
+
+button {
+    grid-column: 2/4;
+    width: 200px;
+    margin: 0 auto;
 }
 
 /* Gallery ********************************************/
@@ -206,6 +238,9 @@ h1 .subheader {
 }
 
 @media screen and (max-width: 800px) {
+    .exclude-small {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 801px) and (max-width: 1200px) {

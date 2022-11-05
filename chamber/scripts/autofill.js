@@ -1,0 +1,1 @@
+document.getElementById("time").setAttribute("value", new Date());
