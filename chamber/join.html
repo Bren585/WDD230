@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = en>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Foothill Chamber of Commerce Home Page">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Foothill Chamber</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/universal.css">
+        <link rel="stylesheet" href="styles/index.css">
+    </head>
+    <body>
+        <div id="announcement">
+            <p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+        </div>
+        <header>
+            <a href="index.html"><img class="logo" alt="Foothill Chamber Logo" src="images/logo-circle.webp"></a>
+            <h1>Foothill<span class="subheader">Chamber of Commerce</span></h1>
+            <a href="https://www.facebook.com"><img class="socialLogo" alt="Facebook" src="images/facebook.png"></a>
+            <a href="https://www.linkedin.com"><img class="socialLogo" alt="Linkedin" src="images/linkedIn.png"></a>
+            <button id="navButton" type="button"><img class="hamburger" alt="Navigation" src="images/hamburger.png"></button>
+            <nav id="nav">
+                <ul>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="index.html">Directory</a></li>
+                    <li><a href="index.html">Join</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                    <li class="social"><a href="https://www.facebook.com">Facebook</a></li>
+                    <li class="social"><a href="https://www.linkedin.com">Linkedin</a></li>
+                </ul>
+            </nav>
+            <p id="todaysDate"></p>
+        </header>
+        <main>
+
+        </main>
+        <footer>
+            <div class="foot">
+                <img class="logo" alt="Foothill Chamber Logo" src="images/logo-circle.webp">
+                <div class="left">
+                    <h3>Foothill Chamber of Commerce</h3>
+                    <p class="address">123 Chamber lane<br>Foot, Hill 58885</p>
+                </div>
+                <div class="right">
+                    <p class="email">info@foothillchamber.org</p>
+                    <p class="phone">(000) 1010-0101</p>
+                    <a class="map"><img class="pin" alt="Map Pin" src="images/pin.png">Location Map</a>
+                </div>
+            </div>
+            <hr> 
+            <div class="footerer">
+                <p class="copyright">&copy;<span id="year"></span> Foothill Chamber<span class="l"> | </span><br><b>Brendan Koetting</b><span class="l"> | </span><br>WDD 230 Project<span class="l"> | </span><br class="meanie">Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </footer>
+        <script src="scripts/dates.js"></script>
+        <script src="scripts/navbutton.js"></script>
+    </body>
+</html>
