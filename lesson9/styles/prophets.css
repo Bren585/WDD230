@@ -1,0 +1,29 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.cards section {
+    text-align: center;
+    background-color: blanchedalmond;
+    width: 250px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    border-style: solid;
+    
+}
+
+.cards section img {
+    box-shadow: 0 0 10px #000000;
+    width: 200px;
+}
+
+.cards section h2 {
+    margin-top: -5px;
+}
+
+footer { 
+    margin-top: 20px;
+}
