@@ -167,7 +167,6 @@ h2 .subheader {
     padding: 0;
     width: fit-content;
     height: fit-content;
-    display: flex;
     background-color: rgba(1,1,1,0);
 }
 
@@ -241,22 +240,20 @@ button {
     .exclude-small {
         display: none;
     }
-}
 
-@media screen and (min-width: 801px) and (max-width: 1200px) {
     .gallery .card {
-        display: inline-block;
+        width: 200px;
     }
 
-    .gallery .card div:hover img {
-        filter: saturate(10%);
+    .gallery .card img, .gallery .card div {
+        width: 150px;
+        height: 150px;
     }
 }
 
-@media screen and (min-width: 1201px) {
-    .gallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+@media screen and (min-width: 801px) {
+    .gallery .card {
+        display: block;
     }
 
     .gallery .card div:hover img {
@@ -389,7 +386,9 @@ footer hr {
     }
 
     #navButton {
-        margin-left: 10px;
+        grid-row: 1/2;
+        grid-column: 5/6;
+        margin-left: 15px;
     }
 }
 
