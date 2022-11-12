@@ -1,0 +1,13 @@
+{
+    "members": [
+        {"name": "Foothill Foot Care",  "address": "", "phone": "", "website": "", "email": "info@foothillfeet.org",    "logo": "foot.png",         "member-level": "NP",       "tag": "\"Feet? We got 'em!\""},
+        {"name": "Shoepolis",           "address": "", "phone": "", "website": "", "email": "contact@shoepolis.org",    "logo": "shoes.png",        "member-level": "Silver",   "tag": "An innovative take on covering the foot."},
+        {"name": "Manny's Pettys",      "address": "", "phone": "", "website": "", "email": "manny@petty.org",          "logo": "pedicure.png",     "member-level": "Gold",     "tag": "\"I ain't petty, I'm pretty!\""},
+        {"name": "Stocking Stock",      "address": "", "phone": "", "website": "", "email": "info@stocking.org",        "logo": "stocking.png",     "member-level": "Bronze",   "tag": "We stock your socks!"},
+        {"name": "Foothill PI",         "address": "", "phone": "", "website": "", "email": "foothill@pi.org",          "logo": "detective.png",    "member-level": "Gold",     "tag": "Leave the footwork to the professionals."},
+        {"name": "The Lace Emporium",   "address": "", "phone": "", "website": "", "email": "contact@laceemp.org",      "logo": "lace.png",         "member-level": "Silver",   "tag": "A new kind of lace. Shoelace."},
+        {"name": "The People's Feet",   "address": "", "phone": "", "website": "", "email": "info@standforjustice.org", "logo": "stand.png",        "member-level": "NP",       "tag": "At TPF, we stand for you."},
+        {"name": "Foothill Loans",      "address": "", "phone": "", "website": "", "email": "foothill@loan.com",        "logo": "money-bag.png",    "member-level": "Bronze",   "tag": "Need money? We can foot the bill!"},
+        {"name": "Foot and Fist",       "address": "", "phone": "", "website": "", "email": "footandfist@dojo.org",     "logo": "kick.png",         "member-level": "Bronze",   "tag": "Come learn from our new kick boxing expert!"}
+    ]
+}

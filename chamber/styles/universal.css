@@ -1,3 +1,7 @@
+:root {
+    --main-text-color: #072443;
+}
+
 /* Announcement ********************************************/
 #announcement {
     margin-top: 0;
@@ -76,6 +80,12 @@ a:hover {
     text-decoration: none;
 }
 
+.toggle {
+    background-color: #98b7d7;
+    box-shadow: inset 0 0 10px #54779d;
+    text-decoration: none;
+}
+
 section {
     text-align: center;
     background-color: #83A2C3;
@@ -90,6 +100,11 @@ section {
 .message {
     padding: 2px;
     font-weight: bold;
+}
+
+.space {
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 /* Lazy Loading **************************************/
@@ -261,6 +276,51 @@ button {
     }
 }
 
+/* grid-list ***************************************/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid .card {
+    width: 270px;
+}
+
+.grid .card h3, .grid .card h4 {margin-top: 0;}
+.grid .contact {display: none;}
+
+.grid .card img {
+    width: 150px;
+    height: 150px;
+}
+
+.grid .card h4, .grid .card .member-level {margin-bottom: 10px;}
+
+.grid .list-only {display:none;}
+
+.list {display: block;}
+.list .card {
+    display: flex; 
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+.list .card::after {content: "";} /* Make Flexbox space equally from the right edge */
+
+.list .card * {margin: 0;}
+.list .card img {
+    width: 70px;
+    height: 70px;
+}
+
+.list h3 {width: 200px;}
+
+.list .a {text-decoration: underline;}
+.list .a:hover {color: #0151a7;}
+
+.list .grid-only {display:none;}
+
 /* Card ********************************************/
 
 .card {
@@ -269,7 +329,7 @@ button {
     border-style: solid;
     border-width: 1px;
     border-color: #83A2C3;
-    padding: 1em;
+    padding: 15px;
     margin: 0 auto;
     color: var(--main-text-color);
     box-shadow: inset 0 0 10px #83A2C3;
