@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang = en>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Brendan's assignment portal">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>WDD Assignment Portal | Home</title>
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="../styles/universal.css">
+    </head>
+    <body>
+        <main>
+            <h2>OpenWeatherMap.org API Test</h2>
+            <p>The current temperature in Fairbanks, Alaska is <span id="current-temp"></span>&deg;F</p>
+            <h2>Current Condition Icon</h2>
+            <figure>
+                <img src="" alt="" id="weather-icon" />
+                <figcaption></figcaption>
+            </figure>
+        </main>
+        <footer>
+            <p>&copy; <span id="year"></span> | Brendan J. Koetting | Idaho</p>
+            <p class="diminished">Last Updated : <span id="lastModified"></span></p>
+        </footer>
+        <script src="../scripts/dates.js"></script>
+        <script src="scripts/weatherapi.js"></script>
+    </body>
+</html>
+
