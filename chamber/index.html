@@ -49,12 +49,12 @@
                 </section>
                 <section class="weather">
                     <h3>Weather</h3>
-                    <p class="temp"><img src="images/weather.png" alt="Weather"><span id="temp">147</span>&#8457;</p>
+                    <p class="temp"><img id="weather-icon" src="" alt="Weather"><span id="temp">00</span>&#8457;</p>
                     <p class="sky">Partly Cloudy</p>
                     <hr>
                     <div>
                         <p>Wind Speed:</p>
-                        <p><span id="wind">41.2</span> km/h</p>
+                        <p><span id="wind">00.0</span> mph</p>
                         <p>Wind Chill:</p>
                         <p><span id="chill">N/A</span>&#8457;</p>
                     </div>
@@ -111,10 +111,11 @@
             <hr> 
             <div class="footerer">
                 <p class="copyright">&copy;<span id="year"></span> Foothill Chamber<span class="l"> | </span><br><b>Brendan Koetting</b><span class="l"> | </span><br>WDD 230 Project<span class="l"> | </span><br class="meanie">Last Modification: <span id="lastModified"></span></p>
+                <p>Weather Data courtesy of <a href="https://openweathermap.org/">https://openweathermap.org/<a></p>
             </div>
         </footer>
         <script src="scripts/dates.js"></script>
         <script src="scripts/navbutton.js"></script>
-        <script src="scripts/windchill.js"></script>
+        <script src="scripts/weather.js"></script>
     </body>
 </html>
