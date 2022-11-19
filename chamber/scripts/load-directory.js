@@ -10,6 +10,7 @@ function displayMember(member) {
     let logo = document.createElement("img");
     if (member["logo"] == "") {logo.setAttribute("src", "https://placehold.jp/b8b8b8/ffffff/150x150.png?text=Logo%20Not%20Found");}
     else                      {logo.setAttribute("src", `images/${member["logo"]}`);}
+    logo.setAttribute("alt", `${member[name]} Logo`)
     card.appendChild(logo);
 
     // Name
