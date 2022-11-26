@@ -1,0 +1,38 @@
+main {
+    display: grid;
+    grid-gap: 0;
+    padding: 0;
+} 
+
+.right p {
+    margin: 5px;
+}
+
+.right .name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.right .pos {
+    font-style: italic;
+}
+
+@media screen and (max-width: 800px) {
+    .left {
+        grid-row: 2/3;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    main {
+        grid-template-columns: 1fr 300px;
+    }
+
+    .left .form {
+        height: 94.5%;
+    }
+
+    #msg {
+        height: 16em;
+    }
+}

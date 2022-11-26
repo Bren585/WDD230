@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang = en>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Foothill Chamber of Commerce Form Submission Page">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Foothill Chamber | Contact</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/universal.css">
+        <link rel="stylesheet" href="styles/contact.css">
+    </head>
+    <body>
+        <div id="announcement">
+            <p>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+        </div>
+        <header>
+            <a href="index.html"><img class="logo" alt="Foothill Chamber Logo" src="images/logo-circle.webp"></a>
+            <h1>Foothill<span class="subheader">Chamber of Commerce</span></h1>
+            <a href="https://www.facebook.com"><img class="socialLogo" alt="Facebook" src="images/facebook.png"></a>
+            <a href="https://www.linkedin.com"><img class="socialLogo" alt="Linkedin" src="images/linkedIn.png"></a>
+            <button id="navButton" type="button"><img class="hamburger" alt="Navigation" src="images/hamburger.png"></button>
+            <nav id="nav">
+                <ul>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="social"><a href="https://www.facebook.com">Facebook</a></li>
+                    <li class="social"><a href="https://www.linkedin.com">Linkedin</a></li>
+                </ul>
+            </nav>
+            <p id="todaysDate"></p>
+        </header>
+        <main>
+            <div class="left">
+                <section class="form">
+                    <h2>Have inquiries for us? Send us a message using this form!</h2>
+                    <form action="thank-you2.html">
+                        <label for="fname"      >First Name             </label><input type="text"      name="fname"    id="fname"      required>
+                        <label for="lname"      >Last Name              </label><input type="text"      name="lname"    id="lname"      required>
+                        <label for="business"   >Company                </label><input type="text"      name="business" id="business"   required>
+                        <label for="title"      >Position/Title         </label><input type="text"      name="title"    id="title"      pattern="[a-zA-Z0-9 \-].{7,}">
+                        <label for="email"      >Email                  </label><input type="email"     name="email"    id="email"      placeholder="example@email.com">
+                        <label for="cell"       >Cell                   </label><input type="tel"       name="cell"     id="cell"       required>
+                        <label for="pref"       >Contact Preference     </label>
+                        <select name="pref" id="pref">
+                            <option value="email">Email</option>
+                            <option value="phone">Phone</option>
+                        </select>
+                        <br>
+                        <label for="msg"        >Message                </label><textarea               name="msg"      id="msg"        rows="8"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </section>
+            </div>
+            <div class="right">
+                <section class="visit">
+                    <h3>Come Visit Us!</h3>
+                    <p>Foothill Chamber of Commerce</p>
+                    <p>123 Chamber lane</p>
+                    <p>Foot, Hill 58885</p>
+                    <hr>
+                    <p>Monday: 12:00 PM to 4:00 PM</p>
+                    <p>Tuesday - Friday: 9:00 AM to 4:00PM</p>
+                    <p>Saturday: By Appointment Only</p>
+                </section>
+                <section class="poi">
+                    <h3>Persons of Interest</h3>
+                    <hr>
+                    <p class="name">Trotter Hill</p>
+                    <p class="pos">President & Founder</p>
+                    <p class="num">(000) 1010-0101, ext. 100</p>
+                    <hr>
+                    <p class="name">Joe Bigg</p>
+                    <p class="pos">Vice President</p>
+                    <p class="num">(000) 1010-0101, ext. 101</p>
+                    <hr>
+                    <p class="name">Stahl King</p>
+                    <p class="pos">Event Manager</p>
+                    <p class="num">(000) 1010-0101, ext. 102</p>
+                    <hr>
+                    <p class="name">Jack Wellington</p>
+                    <p class="pos">Disney Representative</p>
+                    <p class="num">(000) 1010-0101, ext. 113</p>
+                    <hr>
+                    <p class="name">Toan Ael</p>
+                    <p class="pos">Executive Secretary</p>
+                    <p class="num">(000) 1010-0101, ext. 103</p>
+                    <hr>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="foot">
+                <img class="logo" alt="Foothill Chamber Logo" src="images/logo-circle.webp">
+                <div class="left">
+                    <h3>Foothill Chamber of Commerce</h3>
+                    <p class="address">123 Chamber lane<br>Foot, Hill 58885</p>
+                </div>
+                <div class="right">
+                    <p class="email">info@foothillchamber.org</p>
+                    <p class="phone">(000) 1010-0101</p>
+                    <a class="map"><img class="pin" alt="Map Pin" src="images/pin.png">Location Map</a>
+                </div>
+            </div>
+            <hr> 
+            <div class="footerer">
+                <p class="copyright">&copy;<span id="year"></span> Foothill Chamber<span class="l"> | </span><br><b>Brendan Koetting</b><span class="l"> | </span><br>WDD 230 Project<span class="l"> | </span><br class="meanie">Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </footer>
+        <script src="scripts/dates.js"></script>
+        <script src="scripts/navbutton.js"></script>
+    </body>
+</html>
