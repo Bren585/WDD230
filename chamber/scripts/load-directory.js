@@ -62,6 +62,7 @@ function displayMember(member) {
     // Website
     let website = document.createElement("a");
     website.textContent = "Website";
+    website.setAttribute("href", "not-found.html")
     website.classList.add("website");
     website.classList.add("grid-only");
     website.setAttribute("href", member["website"]);
