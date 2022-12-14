@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Bountiful Foods Home Page">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bountiful | Home</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/universal.css">
+        <link rel="stylesheet" href="styles/index.css">
+        <script src="scripts/weather.js" defer></script>
+        <script src="scripts/last-edit.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="logo"><img alt="Bountiful Foods Logo" src="images/logo.png"></a>
+            <h1>Bountiful Foods</h1>
+            <nav>
+                <img class="navButton" alt="Navigation Button" src="https://placehold.jp/ffffff/000/50x50.png?text=Hamb">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Fresh</a></li>
+                    <li><a href="index.html">About Us</a></li>
+                </ul>
+            <div class="social">
+                <a href="https://facebook.com"><img alt="Facebook Profile" src="images/facebook.png"></a>
+                <a href="https://instagram.com"><img alt="Instagram Profile" src="images/instagram.png"></a>
+                <a href="https://twitter.com"><img alt="Twitter Profile" src="images/twitter.png"></a>
+            </div>
+            </nav>
+        </header>
+        <main>
+            <section class="card hero">
+                <h2>Fresh Fruit for Fresh Minds</h2>
+                <picture>
+                    <img src="images/strawberries-large.webp" alt="Fresh Strawberries">
+                </picture>
+            </section>
+            <section class="card drink">
+                <h3>Make Your Own Drink!</h3>
+                <div class="inner">
+                </div>
+            </section>
+            <section class="card weather">
+                <h3>Weather</h3>
+                <div class="inner">
+                    <p class="temp"><img id="weather-icon" src="images/weather.png" alt="Weather"><span id="temp">00</span>&#8457;</p>
+                    <p class="sky">Partly Cloudy</p>
+                    <hr>
+                    <div>
+                        <p>Wind Speed:</p>
+                        <p><span id="wind">00.0</span> mph</p>
+                        <p>Humidity:</p>
+                        <p><span id="humid">00</span>%</p>
+                    </div>
+                </div>
+                <div id="forecast"></div>
+            </section>
+            <section class="card location">
+                <h3>Oceanside, CA</h3>
+                <img src="images/oceanside.jpeg" alt="A picture of a beach in Oceanside">
+                <div class="inner">
+                    <p>Bountiful Foods is based in the beutiful town of Oceasnide. Known for it's marina and surfing culture, Oceanside is nestled just between Carlsbad and Camp Pendleton. With a population over 170,000, Oceanside is trendy and family-friendly!</p>
+                </div>
+            </section>
+            <section class="card contact">
+                <h3>Contact Us!</h3>
+                <div class="inner">
+                    <p>2043 Westcliff Dr #100</p>
+                    <p>Oceanside, CA 92003</p>
+                    <br>
+                    <p>+1 (760) 000-0000</p>
+                    <p>bountifulfoods@info.org</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p class="copyright">&copy;<span id="year"></span> Foothill Chamber<span> | </span><b>Brendan Koetting</b><span> | </span>WDD 230 Project<span> | </span>Last Modification: <span id="lastModified"></span></p>
+            <p>Weather Data courtesy of <a href="https://openweathermap.org/">https://openweathermap.org/</a></p>
+        </footer>
+    </body>
+</html>
