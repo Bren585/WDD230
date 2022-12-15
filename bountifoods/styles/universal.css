@@ -75,6 +75,8 @@ header nav ul li a:hover {text-decoration: underline;}
     background-color: black;
 }
 
+.hero picture {background-color: black;}
+
 h2 {
     position: absolute;
     top: 10px;
