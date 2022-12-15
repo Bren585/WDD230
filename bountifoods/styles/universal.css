@@ -94,7 +94,7 @@ h2 {
 
 .card .inner {margin: 10px;}
 
-.hero {
+.card.hero {
     position: relative;
     overflow: hidden;
     height: 200px;
