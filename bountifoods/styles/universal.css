@@ -123,6 +123,7 @@ footer {
 }
 
 footer a:visited {color: white;}
+footer a:hover {color: white;}
 
 @media screen and (max-width: 700px) {
     .neversmall {display: none;}
