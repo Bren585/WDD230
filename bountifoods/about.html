@@ -2,17 +2,17 @@
 <html lang=en>
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="Bountiful Foods Home Page">
+        <meta name="description" content="About Bountiful Foods">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bountiful | Home</title>
+        <title>Bountiful | About</title>
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/universal.css">
-        <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/about.css">
         <script src="scripts/navbutton.js" defer></script>
-        <script src="scripts/weather.js" defer></script>
         <script src="scripts/last-edit.js" defer></script>
+        <script src="scripts/google-map.js"></script>
         <script src="scripts/lazy.js" defer></script>
-        <script src="scripts/load-history.js" defer></script>
+        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC51xCXssFbEq1r4aMt-m7a6-hK3g7bJR4&callback=initMap"></script>
     </head>
     <body>
         <header>
@@ -34,43 +34,31 @@
         </header>
         <main>
             <section class="card hero">
-                <h2>Fresh Fruit for Fresh Minds</h2>
+                <h2>Our Fruit and Our People</h2>
                 <picture>
                     <source media="(min-width:1001px)" srcset="images/strawberries-large.webp">
                     <source media="(min-width:701px)" srcset="images/strawberries-medium.webp">
                     <img src="images/strawberries-small.webp" alt="Fresh Strawberries">
                 </picture>
             </section>
-            <section class="card drink">
-                <h3>Try our Custom Drink Creator!</h3>
+            <div class="lazy company">
+                <img class="btm" alt="Our Employees" src="images/company.webp" loading="lazy">
+                <img class="top" src="https://placehold.jp/aaaaaa/ffffff/400x250.png?text=Loading" alt="An unloaded Image">
+            </div>
+            <section class="card company">
+                <h3>About Our Company</h3>
                 <div class="inner">
-                    <p>You've had <span id="count"></span> drink<span id="plural">s</span>! Looking for more?</p>
-                    <a href="fresh.html" class="button">Make a Drink!</a>
+                    <p>Our company was founded in 1888 and is one of the oldest companies in Oceanside. We were founded on the principles of helping the fresh, healthy, and tasty fruit of our community reach the whole world. We value our customers, and espcially the cooperation and friendship of our local farmers and business owners. </p> 
                 </div>
-            </section>
-            <section class="card weather">
-                <h3>Weather</h3>
+            </section>  
+            <div class="lazy produce">
+                <img class="btm" alt="Tasty Fruit and a Smoothie" src="images/product.webp" loading="lazy">
+                <img class="top" src="https://placehold.jp/aaaaaa/ffffff/400x250.png?text=Loading" alt="An unloaded Image">
+            </div>
+            <section class="card produce">
+                <h3>About Our Produce</h3>
                 <div class="inner">
-                    <p class="temp"><img id="weather-icon" src="images/weather.png" alt="Weather"><span id="temp">00</span>&#8457;</p>
-                    <p class="sky">Partly Cloudy</p>
-                    <hr>
-                    <div>
-                        <p>Wind Speed:</p>
-                        <p><span id="wind">00.0</span> mph</p>
-                        <p>Humidity:</p>
-                        <p><span id="humid">00</span>%</p>
-                    </div>
-                </div>
-                <div id="forecast"></div>
-            </section>
-            <section class="card location">
-                <h3>Oceanside, CA</h3>
-                <div class="lazy img">
-                    <img class="btm" src="images/oceanside.jpeg" alt="A picture of a beach in Oceanside" loading="lazy">
-                    <img class="top" src="https://placehold.jp/aaaaaa/ffffff/282x187.png?text=Loading" alt="An unloaded Image">
-                </div>
-                <div class="inner">
-                    <p>Bountiful Foods is based in the beutiful town of Oceasnide. Known for it's marina and surfing culture, Oceanside is nestled just between Carlsbad and Camp Pendleton. With a population over 170,000, Oceanside is trendy and family-friendly!</p>
+                    <p>Our Fruit is organic and locally grown and sourced. We take pride in the quality of our product and our relationship with local farmers. For produce unable to be grown in California, we work hand in hand with local farmers in the area in which the product is grown to ensure our standards of freshness. </p>
                 </div>
             </section>
             <section class="card contact">
@@ -81,17 +69,12 @@
                     <br>
                     <p>+1 (760) 000-0000</p>
                     <p>bountifulfoods@info.org</p>
-                    <div class="social neverbig">
-                        <a href="https://facebook.com"><img alt="Facebook Profile" src="images/facebook.png"></a>
-                        <a href="https://instagram.com"><img alt="Instagram Profile" src="images/instagram.png"></a>
-                        <a href="https://twitter.com"><img alt="Twitter Profile" src="images/twitter.png"></a>
-                    </div>
                 </div>
+                <div id="map"></div> 
             </section>
         </main>
         <footer>
             <p class="copyright">&copy;<span id="year"></span> Bountiful Foods<span> | </span><b>Brendan Koetting</b><span class="neversmall"> | </span><br class="onlysmall">WDD 230 Project<span> | </span>Last Modification: <span id="lastModified"></span></p>
-            <p>Weather Data courtesy of <a href="https://openweathermap.org/">https://openweathermap.org/</a></p>
         </footer>
     </body>
 </html>

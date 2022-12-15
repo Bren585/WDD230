@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Bountiful Foods Template Page">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bountiful | Template</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/universal.css">
+
+        <script src="scripts/navbutton.js" defer></script>
+        <script src="scripts/last-edit.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="logo"><img alt="Bountiful Foods Logo" src="images/logo.png"></a>
+            <h1>Bountiful Foods</h1>
+            <img id="navButton" class="onlysmall" alt="Navigation Button" src="images/hamburger.png">
+            <nav>
+                <ul id="nav" class="neversmall">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fresh.html">Fresh</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            <div class="social onlybig">
+                <a href="https://facebook.com"><img alt="Facebook Profile" src="images/facebook.png"></a>
+                <a href="https://instagram.com"><img alt="Instagram Profile" src="images/instagram.png"></a>
+                <a href="https://twitter.com"><img alt="Twitter Profile" src="images/twitter.png"></a>
+            </div>
+            </nav>
+        </header>
+        <main>
+            <section class="card hero">
+                <h2>Fresh Fruit for Fresh Minds</h2>
+                <picture>
+                    <source media="(min-width:1001px)" srcset="images/strawberries-large.webp">
+                    <source media="(min-width:701px)" srcset="images/strawberries-medium.webp">
+                    <img src="images/strawberries-small.webp" alt="Fresh Strawberries">
+                </picture>
+            </section>
+        </main>
+        <footer>
+            <p class="copyright">&copy;<span id="year"></span> Bountiful Foods<span> | </span><b>Brendan Koetting</b><span class="neversmall"> | </span><br class="onlysmall">WDD 230 Project<span> | </span>Last Modification: <span id="lastModified"></span></p>
+        </footer>
+    </body>
+</html>

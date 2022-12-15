@@ -35,19 +35,22 @@ function displayToday(data) {
 
 function displayForecast(list) {
     var count = 0;
+    var late = 0;
     for (var i = 0; i < list.length && count < 5; ++i) {
 
         var day = new Date(list[i].dt * 1000);
         if (day.getHours() < 10) continue;
 
-        var target = new Date().getDay() + count;
+        var target = new Date().getDay() + count + late;
         if (target >= 7) target -= 7;
 
-        if (day.getDay() == target) {
+        if (day.getDay() == target || day.getDay() - 1 == target) {
             count++;
+            if (day.getDay() > target) {late += 1;}
             //Do the stuff!
             let data = list[i];
             var element = document.createElement("section");
+            if (count > 3) {element.classList.add("neversmall");}
             element.classList.add("forecasted");
             
             var date = document.createElement("h6");

@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Nerko+One&display=swap');
 
-body {
-    background-color: #f7e0e0;
-}
+body {background-color: #f7e0e0;}
 
 header {
     /*background-color: #ED4548;*/
     display: grid;
     margin: 10px;
     border-radius: 3px;
+    grid-template-columns: 150px 1fr auto;
 }
 
 h1 {
@@ -36,7 +35,7 @@ h4 {font-size: 20px;}
 
 h6 {font-size: 15px;}
 
-p {
+p, a {
     font-family: 'Josefin Sans', sans-serif;
     line-height: 1.5;
 }
@@ -51,6 +50,13 @@ p {
     height: 50px;
 }
 
+.logo {margin: 10px auto;}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
 header nav ul li a {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
@@ -62,13 +68,50 @@ header nav ul li a:visited {color: #3a0506;}
 
 header nav ul li a:hover {text-decoration: underline;}
 
+.hero {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+h2 {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: #B4D6AE;
+    text-shadow: 0 0 2px black,
+                 0 0 20px black;
+}
+
 .card {
     border: 1px solid #313b30;
     background-color: white;
 }
 
-.card .inner {
-    margin: 10px;
+.card .inner {margin: 10px;}
+
+.lazy {
+    border: 1px solid black;
+    margin: auto;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #ED4548;
+    border-radius: 15px;
+    padding: 12px 22px;
+    text-align: center;
+    color: black;
+}
+
+.button:hover {
+    background-color: #e98c8e;
+    box-shadow: inset 0 0 10px #ED4548;
+    text-decoration: none;
+}
+
+.button:visited {
+    color: black;
 }
 
 footer {
@@ -78,21 +121,43 @@ footer {
     color: white;
 }
 
-footer a:visited {
-    color: white;
-}
+footer a:visited {color: white;}
 
-@media screen and (min-width: 1201px) {
-    /***************************************************************************************
-    * Header
-    ****************************************************************************************/
+@media screen and (max-width: 700px) {
+    .neversmall {display: none;}
 
-    header {
-        grid-template-columns: 150px 1fr auto;
+    h1 {font-size: 40px;}
+    h2 {font-size: 70px;}
+
+    #navButton {
+        width: 50px;
+        height: 50px;
+        margin-top: 35px;
+        margin-right: 10px;
     }
 
-    .logo {
-        margin: 10px auto;
+    header nav {
+        text-align: center;
+        grid-column: 1/4;
+    }
+
+    header nav ul li a {
+        font-size: 30px;
+        line-height: 2;
+    }
+
+    .hero picture img {
+        width: 700px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 701px) {.onlysmall {display: none;}}
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+    main {
+        width: 90%;
+        margin: 20px auto;
     }
 
     header nav ul {
@@ -102,26 +167,64 @@ footer a:visited {
         padding: 0;
     }
 
-    header nav ul li {
-        margin: 0 20px;
-    }
+    header nav ul li {margin: 0 20px;}
 
-    header nav .social {
+    header nav ul {
+        display: block;
         text-align: right;
     }
 
-    header nav .social a {
-        margin: 0 10px;
+    h2 {font-size: 50px;}
+
+    .hero picture img {
+        width: 1000px;
+        height: 200px;
     }
+}
 
-    .navButton {display: none;}
+@media screen and (max-width: 1000px) {.onlybig {display: none;}}
 
-    /***************************************************************************************
-    * Main
-    ****************************************************************************************/
+@media screen and (min-width: 1001px) { 
+    .neverbig {display: none;}
 
     main {
         width: 90%;
         margin: 20px auto;
     }
+
+    .logo {margin: 10px auto;}
+
+    header nav ul {display: flex;}
+
+    header nav ul li {margin: 0 20px;}
+
+    header nav .social {text-align: right;}
+
+    header nav .social a {margin: 0 10px;}
+
+    h2 {font-size: 70px;}
+
+    .hero picture img {
+        width: 1200px;
+        height: 200px;
+    }
+}
+
+/* Lazy Loading **************************************/
+
+.lazy {position: relative;}
+
+.lazy .top {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    -webkit-transition: opacity 0.25s ease-in-out;
+    -moz-transition: opacity 0.25s ease-in-out;
+    -o-transition: opacity 0.25s ease-in-out;
+    transition: opacity 0.25s ease-in-out;
+}
+
+.loaded .top {
+    opacity: 0;
 }

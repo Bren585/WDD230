@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Bountiful Foods Fresh Drink Maker">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bountiful | Fresh</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/universal.css">
+        <link rel="stylesheet" href="styles/fresh.css">
+        <script src="scripts/navbutton.js" defer></script>
+        <script src="scripts/last-edit.js" defer></script>
+        <script src="scripts/load-fruit.js" defer></script>
+        <script src="scripts/order-fruit.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="logo"><img alt="Bountiful Foods Logo" src="images/logo.png"></a>
+            <h1>Bountiful Foods</h1>
+            <img id="navButton" class="onlysmall" alt="Navigation Button" src="images/hamburger.png">
+            <nav>
+                <ul id="nav" class="neversmall">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fresh.html">Fresh</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            <div class="social onlybig">
+                <a href="https://facebook.com"><img alt="Facebook Profile" src="images/facebook.png"></a>
+                <a href="https://instagram.com"><img alt="Instagram Profile" src="images/instagram.png"></a>
+                <a href="https://twitter.com"><img alt="Twitter Profile" src="images/twitter.png"></a>
+            </div>
+            </nav>
+        </header>
+        <main>
+            <section class="card hero">
+                <h2>Make Your Own Drink</h2>
+                <picture>
+                    <source media="(min-width:1001px)" srcset="images/strawberries-large.webp">
+                    <source media="(min-width:701px)" srcset="images/strawberries-medium.webp">
+                    <img src="images/strawberries-small.webp" alt="Fresh Strawberries">
+                </picture>
+            </section>
+            <section class="card creator">
+                <h3>Drink Creator</h3>
+                <div class="inner">
+                    <form onsubmit="return false">
+                        <h4>Pick Your Fruit</h4>
+                        <label  class="top" for="fruit1"><p>First</p></label>
+                        <select class="top" name="fruit1" id="fruit1"></select>
+                        <label  class="top" for="fruit2"><p>Second</p></label>
+                        <select class="top" name="fruit2" id="fruit2"></select>
+                        <label  class="top" for="fruit3"><p>Third</p></label>
+                        <select class="top" name="fruit3" id="fruit3"></select>
+
+                        <h4>Order Details</h4>
+                        <label class="btm" for="name"   ><p>Name</p ></label><input class="btm" type="text" name="name"  id="name">
+                        <label class="btm" for="email"  ><p>Email</p></label><input class="btm" type="text" name="email" id="email">
+                        <label class="btm" for="phone"  ><p>Phone</p></label><input class="btm" type="text" name="phone" id="phone">
+                        <label class="txt" for="instructions"><p>Special Instructions</p></label><textarea class="txt" name="instructions" id="instructions" rows="4"></textarea>
+
+                        <input type="hidden" name="time" id="time">
+                        <button>Create My Drink!</button>
+                    </form>
+                </div>
+            </section>
+            <section class="card history">
+                <h4>Order History</h4>
+                <div class="inner" id="history">
+
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p class="copyright">&copy;<span id="year"></span> Bountiful Foods<span> | </span><b>Brendan Koetting</b><span class="neversmall"> | </span><br class="onlysmall">WDD 230 Project<span> | </span>Last Modification: <span id="lastModified"></span></p>
+        </footer>
+    </body>
+</html>

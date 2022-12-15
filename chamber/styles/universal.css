@@ -113,13 +113,11 @@ section {
     position: relative;
 }
 
-.lazy img {
+.top {
     position: absolute;
     left: 0;
     top: 0;
-}
 
-.top {
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;
