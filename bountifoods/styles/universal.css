@@ -2,6 +2,16 @@
 
 body {background-color: #f7e0e0;}
 
+.test {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+
+.test {
+    background-color: white;
+}
+
 header {
     /*background-color: #ED4548;*/
     display: grid;
@@ -68,15 +78,6 @@ header nav ul li a:visited {color: #3a0506;}
 
 header nav ul li a:hover {text-decoration: underline;}
 
-.hero {
-    position: relative;
-    overflow: hidden;
-    height: 200px;
-    background-color: black;
-}
-
-.hero picture {background-color: black;}
-
 h2 {
     position: absolute;
     top: 10px;
@@ -92,6 +93,15 @@ h2 {
 }
 
 .card .inner {margin: 10px;}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    background-color: black;
+}
+
+.hero picture {background-color: black;}
 
 .lazy {
     border: 1px solid black;
